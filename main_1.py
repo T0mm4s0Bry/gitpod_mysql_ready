@@ -1,4 +1,4 @@
-#questo codice serve per creare un nuovo database chiamatp "mydatabase"
+#questo codice serve per creare un nuovo database chiamato "mydatabase"
 
 import mysql.connector
 
