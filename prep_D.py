@@ -9,12 +9,12 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 i=0
 for i in range(5):
-    nome_proprio = input("Nome Proprio : ")
-    razza = input("Razza: ")
-    peso = input("Peso (in kg): ")
-    eta = input("Età (in anni): ")
-    sql = "INSERT INTO Mammiferi (Nome_Proprio, Razza, Peso, eta) VALUES (%s, %s, %s, %s)"
-    val = (nome_proprio, razza, peso, eta)
+    Nome_Proprio = input("Nome Proprio : ")
+    Razza = input("Razza: ")
+    Peso = input("Peso (in kg): ")
+    Eta = input("Età (in anni): ")
+    sql = "INSERT INTO Mammiferi (Nome_Proprio, Razza, Peso, Eta) VALUES (%s, %s, %s, %s)"
+    val = (Nome_Proprio, Razza, Peso, Eta)
     mycursor.execute(sql, val)
     i=i+1
 mydb.commit()
